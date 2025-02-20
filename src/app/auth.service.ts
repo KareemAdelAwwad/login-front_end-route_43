@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
-  baseURL = `http://localhost:3000/auth/`; // BE server url
+  baseURL = `https://social.kareemadel.com/auth/`; // BE server url
   token: any = `accesstoken_` + localStorage.getItem('token'); // token preparation for BE
   constructor(private _HttpClient: HttpClient, private _Router: Router) {
     this.token = `accesstoken_` + localStorage.getItem('token');
